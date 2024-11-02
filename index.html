@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quinceañera Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="intro" class="intro-screen">
+        <div class="envelope">
+            <h1 class="intro-title">You're Invited!</h1>
+            <button id="open-btn" class="open-btn">Open</button>
+        </div>
+    </div>
+     <div id="invitation-card" class="container hidden">
+         <div class="card">
+             <header>
+                 <h1>Joslyn Samantha Torres Flores</h1>
+                 <p>Quinceañera</p>
+                 <p>December 8, 2024</p>
+             </header>
+
+             <section class="mainphoto">
+                 <img src="IMG_8415.jpg" width="250" height="300" alt="Joslyn Samantha Torres Flores in her Quinceañera dress">
+             </section>
+
+             <section class="invitation-text">
+                 <p>Señor Torres tienen el honor de invitarle a la Quinceañera de su hija, Joslyn Samantha Torres Flores.</p>
+                 <p>December 8, 2024</p>
+             </section>
+
+             <section class="event-details">
+                 <h2>Recepción</h2>
+                 <p>Hollywood Banquet Hall, 225 Hampton st, Bridgeton, NJ 08302</p>
+                 <p>5:00 PM - 7:00 PM (Dinner)</p>
+                 <p>7:00 PM - 12:00 AM (Dance)</p>
+             </section>
+
+             <section class="honor-list">
+                 <h2>Corte de Honor</h2>
+                 <ul>
+                     <li>Names of honor court members</li>
+                 </ul>
+             </section>
+             <section class="slideshow-container">
+                 <div class="slideshow">
+                     <div class="slide fade">
+                         <img src="FullSizeRender.jpg" alt="Slide 1" style="width:250px" height="300px">
+                     </div>
+                     <div class="slide fade">
+                         <img src="IMG_3469.jpg" alt="Slide 2" style="width:250px" height="300px">
+                     </div>
+                     <div class="slide fade">
+                         <img src="IMG_4946.jpg" alt="Slide 3" style="width:250px" height="300px">
+                     </div>
+
+                     <!-- Navigation buttons -->
+                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                 </div>
+                 <br>
+
+                 <div style="text-align:center">
+                     <span class="dot" onclick="currentSlide(1)"></span>
+                     <span class="dot" onclick="currentSlide(2)"></span>
+                     <span class="dot" onclick="currentSlide(3)"></span>
+                 </div>
+             </section>
+
+             <section class="rsvp-form">
+                 <h2>RSVP</h2>
+                 <form>
+                     <label for="name">Name:</label>
+                     <input type="text" id="name" name="name" required>
+
+                     <label for="email">Email:</label>
+                     <input type="email" id="email" name="email" required>
+
+                     <label for="attending">Will you attend?</label>
+                     <select id="attending" name="attending" required>
+                         <option value="yes">Yes</option>
+                         <option value="no">No</option>
+                     </select>
+
+                     <button type="submit">Submit</button>
+                 </form>
+             </section>
+         </div>
+     </div>
+                
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
